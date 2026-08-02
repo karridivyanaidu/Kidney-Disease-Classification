@@ -19,3 +19,37 @@
 [2026-08-01 17:13:01,940: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2026-08-01 18:04:05,529: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-08-01 18:04:05,536: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-01 18:04:05,557: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-01 18:04:05,558: INFO: common: created directory at: artifacts]
+[2026-08-01 18:04:05,559: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-08-01 18:04:05,559: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1Coa1hm3Dw3WUO1epFj4ztNWKfmflJ29n/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-08-01 18:09:50,977: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1Coa1hm3Dw3WUO1epFj4ztNWKfmflJ29n/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-08-01 18:10:17,079: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-08-02 10:06:15,954: WARNING: font_manager: Matplotlib is building the font cache; this may take a moment.]
+[2026-08-02 10:06:16,642: INFO: font_manager: generated new fontManager]
+[2026-08-02 13:44:09,847: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-08-02 13:44:09,853: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-02 13:44:09,856: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-02 13:44:09,857: INFO: common: created directory at: artifacts]
+[2026-08-02 13:44:09,859: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-08-02 13:44:09,860: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1Coa1hm3Dw3WUO1epFj4ztNWKfmflJ29n/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-08-02 13:49:42,397: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1Coa1hm3Dw3WUO1epFj4ztNWKfmflJ29n/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-08-02 13:50:10,617: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-08-02 13:50:10,618: INFO: main: ********************]
+[2026-08-02 13:50:10,619: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-08-02 13:50:10,621: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-02 13:50:10,624: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-02 13:50:10,625: INFO: common: created directory at: artifacts]
+[2026-08-02 13:50:10,626: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-08-02 13:50:11,534: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-08-02 13:50:11,866: WARNING: config: TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.]
+[2026-08-02 13:50:11,955: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-08-02 13:50:12,185: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
