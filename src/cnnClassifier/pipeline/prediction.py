@@ -9,22 +9,42 @@ class PredictionPipeline:
     def __init__(self, filename):
         self.filename = filename
 
+        # Load deployment model only once
+        self.model = load_model(
+            os.path.join("model", "model.h5")
+        )
+
     def predict(self):
 
-        # load model
-        model = load_model(os.path.join("model", "model.h5"))
-
         imagename = self.filename
-        test_image = image.load_img(imagename, target_size=(224, 224))
+
+        # Load image
+        test_image = image.load_img(
+            imagename,
+            target_size=(224, 224)
+        )
+
+        # Convert image to array
         test_image = image.img_to_array(test_image)
+
+        # Same preprocessing used during training
+        test_image = test_image / 255.0
+
+        # Add batch dimension
         test_image = np.expand_dims(test_image, axis=0)
 
-        result = np.argmax(model.predict(test_image), axis=1)
+        # Make prediction
+        result = np.argmax(
+            self.model.predict(test_image),
+            axis=1
+        )
+
         print(result)
 
+        # Convert result to class
         if result[0] == 1:
             prediction = "Tumor"
-            return [{"image": prediction}]
         else:
             prediction = "Normal"
-            return [{"image": prediction}]
+
+        return [{"image": prediction}]
